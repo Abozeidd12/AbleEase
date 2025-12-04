@@ -1,0 +1,32 @@
+2025-11-27 19:44:27.351 +02:00 [INF] Application is building...........
+2025-11-27 19:44:27.528 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-11-27 19:44:27.531 +02:00 [INF] Application is Running...........
+2025-11-27 19:44:27.609 +02:00 [INF] Now listening on: https://localhost:7040
+2025-11-27 19:44:27.612 +02:00 [INF] Now listening on: http://localhost:5138
+2025-11-27 19:44:27.679 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-27 19:44:27.683 +02:00 [INF] Hosting environment: Development
+2025-11-27 19:44:27.683 +02:00 [INF] Content root path: D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseUI
+2025-11-27 19:44:28.173 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2025-11-27 19:44:28.293 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 121.508ms
+2025-11-27 19:44:28.296 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-27 19:44:28.297 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2025-11-27 19:44:28.309 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 12.2956ms
+2025-11-27 19:44:28.327 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.9757ms
+2025-11-27 19:44:28.452 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2025-11-27 19:44:28.473 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.3461ms
+2025-11-27 20:13:53.182 +02:00 [INF] Application is building...........
+2025-11-27 20:13:53.420 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-11-27 20:13:53.425 +02:00 [INF] Application is Running...........
+2025-11-27 20:13:53.574 +02:00 [INF] Now listening on: https://localhost:7040
+2025-11-27 20:13:53.579 +02:00 [INF] Now listening on: http://localhost:5138
+2025-11-27 20:13:53.719 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-27 20:13:53.724 +02:00 [INF] Hosting environment: Development
+2025-11-27 20:13:53.729 +02:00 [INF] Content root path: D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseUI
+2025-11-27 20:13:54.391 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2025-11-27 20:13:54.637 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 248.1608ms
+2025-11-27 20:13:54.638 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-27 20:13:54.638 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2025-11-27 20:13:54.656 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 17.2041ms
+2025-11-27 20:13:54.682 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.1885ms
+2025-11-27 20:13:54.984 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2025-11-27 20:13:55.010 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.6024ms
