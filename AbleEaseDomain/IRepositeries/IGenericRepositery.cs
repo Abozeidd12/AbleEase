@@ -24,6 +24,11 @@ namespace AbleEaseDomain.IRepositeries
             Expression<Func<T, bool>> predicate,
             params Expression<Func<T, object>>[] includeProperties);
 
+        // *** ADD THIS NEW METHOD ***
+        Task<IEnumerable<T>> GetWithAdvancedIncludesAsync(
+            Expression<Func<T, bool>>? predicate = null,
+            params Func<IQueryable<T>, IQueryable<T>>[] includes);
+
         // Write operations
         Task<T> AddAsync(T entity);
         Task AddRangeAsync(IEnumerable<T> entities);

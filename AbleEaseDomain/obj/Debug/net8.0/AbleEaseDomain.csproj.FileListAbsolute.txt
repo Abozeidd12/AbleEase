@@ -9,3 +9,15 @@ D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseDomain\obj\Debug\net8
 D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseDomain\obj\Debug\net8.0\refint\AbleEaseDomain.dll
 D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseDomain\obj\Debug\net8.0\AbleEaseDomain.pdb
 D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseDomain\obj\Debug\net8.0\ref\AbleEaseDomain.dll
+C:\Users\nancy\Desktop\AbleEase\AbleEase\AbleEaseDomain\bin\Debug\net8.0\AbleEaseDomain.deps.json
+C:\Users\nancy\Desktop\AbleEase\AbleEase\AbleEaseDomain\bin\Debug\net8.0\AbleEaseDomain.dll
+C:\Users\nancy\Desktop\AbleEase\AbleEase\AbleEaseDomain\bin\Debug\net8.0\AbleEaseDomain.pdb
+C:\Users\nancy\Desktop\AbleEase\AbleEase\AbleEaseDomain\obj\Debug\net8.0\AbleEaseDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nancy\Desktop\AbleEase\AbleEase\AbleEaseDomain\obj\Debug\net8.0\AbleEaseDomain.AssemblyInfoInputs.cache
+C:\Users\nancy\Desktop\AbleEase\AbleEase\AbleEaseDomain\obj\Debug\net8.0\AbleEaseDomain.AssemblyInfo.cs
+C:\Users\nancy\Desktop\AbleEase\AbleEase\AbleEaseDomain\obj\Debug\net8.0\AbleEaseDomain.csproj.CoreCompileInputs.cache
+C:\Users\nancy\Desktop\AbleEase\AbleEase\AbleEaseDomain\obj\Debug\net8.0\AbleEaseDomain.sourcelink.json
+C:\Users\nancy\Desktop\AbleEase\AbleEase\AbleEaseDomain\obj\Debug\net8.0\AbleEaseDomain.dll
+C:\Users\nancy\Desktop\AbleEase\AbleEase\AbleEaseDomain\obj\Debug\net8.0\refint\AbleEaseDomain.dll
+C:\Users\nancy\Desktop\AbleEase\AbleEase\AbleEaseDomain\obj\Debug\net8.0\AbleEaseDomain.pdb
+C:\Users\nancy\Desktop\AbleEase\AbleEase\AbleEaseDomain\obj\Debug\net8.0\ref\AbleEaseDomain.dll

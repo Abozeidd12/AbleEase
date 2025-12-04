@@ -155,5 +155,27 @@ namespace AbleEaseInfrastructure.Repositeries
 
             return (items, totalCount);
         }
+
+        public virtual async Task<IEnumerable<T>> GetWithAdvancedIncludesAsync(
+            Expression<Func<T, bool>>? predicate = null,
+            params Func<IQueryable<T>, IQueryable<T>>[] includes)
+        {
+            IQueryable<T> query = _dbSet;
+
+            // Apply the predicate filter if provided
+            if (predicate != null)
+            {
+                query = query.Where(predicate);
+            }
+
+            // Apply each include function to the query
+            // This allows for complex Include/ThenInclude chains
+            foreach (var include in includes)
+            {
+                query = include(query);
+            }
+
+            return await query.ToListAsync();
+        }
     }
 }

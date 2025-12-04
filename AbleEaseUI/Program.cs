@@ -25,8 +25,10 @@ builder.Services.AddDbContext<AbleEaseDbContext>(options =>
 
 options.UseSqlServer(builder.Configuration["ConnectionStrings:DefaultConnection"]));
 
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<IPatientService, PatientService>();
 
 
 
