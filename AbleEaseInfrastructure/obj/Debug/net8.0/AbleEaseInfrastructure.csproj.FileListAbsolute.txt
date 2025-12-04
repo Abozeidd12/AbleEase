@@ -1,0 +1,17 @@
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\bin\Debug\net8.0\AbleEaseInfrastructure.deps.json
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\bin\Debug\net8.0\AbleEaseInfrastructure.runtimeconfig.json
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\bin\Debug\net8.0\AbleEaseInfrastructure.dll
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\bin\Debug\net8.0\AbleEaseInfrastructure.pdb
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\bin\Debug\net8.0\AbleEaseDomain.dll
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\bin\Debug\net8.0\AbleEaseDomain.pdb
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\obj\Debug\net8.0\AbleEaseInfrastructure.csproj.AssemblyReference.cache
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\obj\Debug\net8.0\AbleEaseInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\obj\Debug\net8.0\AbleEaseInfrastructure.AssemblyInfoInputs.cache
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\obj\Debug\net8.0\AbleEaseInfrastructure.AssemblyInfo.cs
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\obj\Debug\net8.0\AbleEaseInfrastructure.csproj.CoreCompileInputs.cache
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\obj\Debug\net8.0\AbleEase.518CC8E6.Up2Date
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\obj\Debug\net8.0\AbleEaseInfrastructure.dll
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\obj\Debug\net8.0\refint\AbleEaseInfrastructure.dll
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\obj\Debug\net8.0\AbleEaseInfrastructure.pdb
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\obj\Debug\net8.0\AbleEaseInfrastructure.genruntimeconfig.cache
+D:\Year2Term1Subjects\database\Project\AbleEaseAPI\AbleEaseInfrastructure\obj\Debug\net8.0\ref\AbleEaseInfrastructure.dll
