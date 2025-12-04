@@ -18,7 +18,7 @@ namespace AbleEaseAPI.Controllers
             _patientService = patientService;
         }
 
-        [HttpPost]
+        [HttpPost("AddPatient")]
         public async Task<ActionResult<GetPatient>> AddPatient([FromBody] AddPatient dto)
         {
             if (!ModelState.IsValid)
@@ -39,7 +39,7 @@ namespace AbleEaseAPI.Controllers
             }
         }
 
-        [HttpGet("{ssn:guid}")]
+        [HttpGet("GetPatientBySSN/{ssn:guid}")]
         public async Task<ActionResult<GetPatient>> GetPatient(Guid ssn)
         {
             var patient = await _patientService.GetPatientBySSNAsync(ssn);
@@ -49,14 +49,14 @@ namespace AbleEaseAPI.Controllers
             return Ok(patient);
         }
 
-        [HttpGet]
+        [HttpGet("GetAllPatients")]
         public async Task<ActionResult<IEnumerable<GetPatient>>> GetAllPatients()
         {
             var patients = await _patientService.GetAllPatientsAsync();
             return Ok(patients);
         }
 
-        [HttpPut("{ssn:guid}")]
+        [HttpPut("UpdatePatient/{ssn:guid}")]
         public async Task<ActionResult<GetPatient>> UpdatePatient(
             Guid ssn, [FromBody] UpdatePatient dto)
         {
@@ -82,7 +82,7 @@ namespace AbleEaseAPI.Controllers
             }
         }
 
-        [HttpDelete("{ssn:guid}")]
+        [HttpDelete("DeletePatient/{ssn:guid}")]
         public async Task<ActionResult> DeletePatient(Guid ssn)
         {
             var result = await _patientService.DeletePatientAsync(ssn);
@@ -92,7 +92,7 @@ namespace AbleEaseAPI.Controllers
             return NoContent();
         }
 
-        [HttpGet("paged")]
+        [HttpGet("GetPagedPatients")]
         public async Task<ActionResult> GetPagedPatients(
             [FromQuery] int pageNumber = 1,
             [FromQuery] int pageSize = 10)

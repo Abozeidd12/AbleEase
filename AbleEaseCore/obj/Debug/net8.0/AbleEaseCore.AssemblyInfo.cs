@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AbleEaseCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cac9c5ef04001e3da2769e1f332195b61dd80795")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e116356bc1a8bf413c3056ec3f2794b1f953cdb")]
 [assembly: System.Reflection.AssemblyProductAttribute("AbleEaseCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AbleEaseCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,86 @@
+2025-12-05 00:25:48.348 +02:00 [INF] Application is building...........
+2025-12-05 00:25:48.474 +02:00 [INF] User profile is available. Using 'C:\Users\nancy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-05 00:25:48.544 +02:00 [INF] Application is Running...........
+2025-12-05 00:25:48.627 +02:00 [INF] Now listening on: https://localhost:7040
+2025-12-05 00:25:48.629 +02:00 [INF] Now listening on: http://localhost:5138
+2025-12-05 00:25:48.771 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-05 00:25:48.772 +02:00 [INF] Hosting environment: Development
+2025-12-05 00:25:48.774 +02:00 [INF] Content root path: C:\Users\nancy\Desktop\AbleEase\AbleEase\AbleEaseUI
+2025-12-05 00:25:49.256 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2025-12-05 00:25:49.462 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 206.8276ms
+2025-12-05 00:25:49.479 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2025-12-05 00:25:49.479 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-05 00:25:49.491 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 11.9055ms
+2025-12-05 00:25:49.515 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.2937ms
+2025-12-05 00:25:49.554 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2025-12-05 00:25:49.576 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.7216ms
+2025-12-05 00:25:55.395 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Patients - null null
+2025-12-05 00:25:55.409 +02:00 [INF] Executing endpoint 'AbleEaseAPI.Controllers.PatientsController.GetAllPatients (AbleEaseUI)'
+2025-12-05 00:25:55.430 +02:00 [INF] Route matched with {action = "GetAllPatients", controller = "Patients", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[AbleEaseCore.DTOs.PatientDTOs.GetPatient]]] GetAllPatients() on controller AbleEaseAPI.Controllers.PatientsController (AbleEaseUI).
+2025-12-05 00:25:56.712 +02:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-12-05 00:25:57.032 +02:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[SSN], [u].[Address], [u].[ContactInfo], [u].[Name], [p].[BirthDate], [p].[CaregiverSSN], [p].[Gender], [p].[ProgramId], [p].[ProgramOrganizationSSN], [p].[RelativeSSN], [t].[SSN], [t].[Address], [t].[ContactInfo], [t].[Name], [t].[BirthDate], [t].[Gender], [t0].[SSN], [t0].[Address], [t0].[ContactInfo], [t0].[Name], [t0].[BirthDate], [t0].[Gender], [t0].[OrganizationSSN], [p0].[OrganizationSSN], [p0].[Id], [p0].[Name], [p0].[endDate], [p0].[startDate], [p0].[status], [m].[PatientSSN], [m].[Id], [m].[Diagnosis], [m].[DoctorName], [m].[RelativeSSN], [m].[TherapyDeatils], [m].[endDate], [m].[startDate], [t1].[Id], [t1].[CaregiverSSN], [t1].[Content], [t1].[PatientSSN], [t1].[ProgramId], [t1].[ProgramOrganizationSSN], [t1].[Subject], [t1].[date], [t1].[SSN], [t1].[Address], [t1].[ContactInfo], [t1].[Name], [t1].[BirthDate], [t1].[Gender], [t1].[OrganizationSSN], [t3].[Id], [t3].[ApplicationDate], [t3].[ApprovalStatus], [t3].[OrganizationSSN], [t3].[PatientSSN], [t3].[percentage], [t3].[SSN], [t3].[Address], [t3].[ContactInfo], [t3].[Name], [t5].[Id], [t5].[CenterID], [t5].[Doctorname], [t5].[Name], [t5].[PatientSSN], [t5].[duration], [t5].[therapyDetails], [t5].[SSN], [t5].[ContactInfo], [t5].[Location], [t5].[Name0], [t6].[PatientSSN], [t6].[DisabilityID], [t6].[level], [t6].[notes], [t6].[SSN], [t6].[description], [t6].[name], [t6].[type]
+FROM [Users] AS [u]
+INNER JOIN [Patients] AS [p] ON [u].[SSN] = [p].[SSN]
+LEFT JOIN (
+    SELECT [u0].[SSN], [u0].[Address], [u0].[ContactInfo], [u0].[Name], [r].[BirthDate], [r].[Gender]
+    FROM [Users] AS [u0]
+    INNER JOIN [Relatives] AS [r] ON [u0].[SSN] = [r].[SSN]
+) AS [t] ON [p].[RelativeSSN] = [t].[SSN]
+LEFT JOIN (
+    SELECT [u1].[SSN], [u1].[Address], [u1].[ContactInfo], [u1].[Name], [c].[BirthDate], [c].[Gender], [c].[OrganizationSSN]
+    FROM [Users] AS [u1]
+    INNER JOIN [Caregivers] AS [c] ON [u1].[SSN] = [c].[SSN]
+) AS [t0] ON [p].[CaregiverSSN] = [t0].[SSN]
+LEFT JOIN [Programs] AS [p0] ON [p].[ProgramOrganizationSSN] = [p0].[OrganizationSSN] AND [p].[ProgramId] = [p0].[Id]
+LEFT JOIN [MedicalInfos] AS [m] ON [u].[SSN] = [m].[PatientSSN]
+LEFT JOIN (
+    SELECT [r0].[Id], [r0].[CaregiverSSN], [r0].[Content], [r0].[PatientSSN], [r0].[ProgramId], [r0].[ProgramOrganizationSSN], [r0].[Subject], [r0].[date], [t2].[SSN], [t2].[Address], [t2].[ContactInfo], [t2].[Name], [t2].[BirthDate], [t2].[Gender], [t2].[OrganizationSSN]
+    FROM [Reports] AS [r0]
+    LEFT JOIN (
+        SELECT [u2].[SSN], [u2].[Address], [u2].[ContactInfo], [u2].[Name], [c0].[BirthDate], [c0].[Gender], [c0].[OrganizationSSN]
+        FROM [Users] AS [u2]
+        INNER JOIN [Caregivers] AS [c0] ON [u2].[SSN] = [c0].[SSN]
+    ) AS [t2] ON [r0].[CaregiverSSN] = [t2].[SSN]
+) AS [t1] ON [u].[SSN] = [t1].[PatientSSN]
+LEFT JOIN (
+    SELECT [f].[Id], [f].[ApplicationDate], [f].[ApprovalStatus], [f].[OrganizationSSN], [f].[PatientSSN], [f].[percentage], [t4].[SSN], [t4].[Address], [t4].[ContactInfo], [t4].[Name]
+    FROM [FinancialAids] AS [f]
+    LEFT JOIN (
+        SELECT [u3].[SSN], [u3].[Address], [u3].[ContactInfo], [u3].[Name]
+        FROM [Users] AS [u3]
+        INNER JOIN [Organizations] AS [o] ON [u3].[SSN] = [o].[SSN]
+    ) AS [t4] ON [f].[OrganizationSSN] = [t4].[SSN]
+) AS [t3] ON [u].[SSN] = [t3].[PatientSSN]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[CenterID], [p1].[Doctorname], [p1].[Name], [p1].[PatientSSN], [p1].[duration], [p1].[therapyDetails], [p2].[SSN], [p2].[ContactInfo], [p2].[Location], [p2].[Name] AS [Name0]
+    FROM [PhysicalTherapies] AS [p1]
+    LEFT JOIN [PhysiotherapyCenters] AS [p2] ON [p1].[CenterID] = [p2].[SSN]
+) AS [t5] ON [u].[SSN] = [t5].[PatientSSN]
+LEFT JOIN (
+    SELECT [p3].[PatientSSN], [p3].[DisabilityID], [p3].[level], [p3].[notes], [d].[SSN], [d].[description], [d].[name], [d].[type]
+    FROM [PatientDisabilities] AS [p3]
+    INNER JOIN [Disabilities] AS [d] ON [p3].[DisabilityID] = [d].[SSN]
+) AS [t6] ON [u].[SSN] = [t6].[PatientSSN]
+ORDER BY [u].[SSN], [t].[SSN], [t0].[SSN], [p0].[OrganizationSSN], [p0].[Id], [m].[PatientSSN], [m].[Id], [t1].[Id], [t1].[SSN], [t3].[Id], [t3].[SSN], [t5].[Id], [t5].[SSN], [t6].[PatientSSN], [t6].[DisabilityID]
+2025-12-05 00:25:57.163 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AbleEaseCore.DTOs.PatientDTOs.GetPatient, AbleEaseCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-05 00:25:57.191 +02:00 [INF] Executed action AbleEaseAPI.Controllers.PatientsController.GetAllPatients (AbleEaseUI) in 1754.6685ms
+2025-12-05 00:25:57.193 +02:00 [INF] Executed endpoint 'AbleEaseAPI.Controllers.PatientsController.GetAllPatients (AbleEaseUI)'
+2025-12-05 00:25:57.198 +02:00 [INF] HTTP GET /api/Patients responded 200 in 1790.4438 ms
+2025-12-05 00:25:57.207 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Patients - 200 null application/json; charset=utf-8 1811.4222ms
+2025-12-05 00:46:59.205 +02:00 [INF] Application is building...........
+2025-12-05 00:46:59.334 +02:00 [INF] User profile is available. Using 'C:\Users\nancy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-05 00:46:59.406 +02:00 [INF] Application is Running...........
+2025-12-05 00:46:59.501 +02:00 [INF] Now listening on: https://localhost:7040
+2025-12-05 00:46:59.502 +02:00 [INF] Now listening on: http://localhost:5138
+2025-12-05 00:46:59.562 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-05 00:46:59.563 +02:00 [INF] Hosting environment: Development
+2025-12-05 00:46:59.564 +02:00 [INF] Content root path: C:\Users\nancy\Desktop\AbleEase\AbleEase\AbleEaseUI
+2025-12-05 00:47:00.030 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2025-12-05 00:47:00.269 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 240.3216ms
+2025-12-05 00:47:00.281 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-05 00:47:00.281 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2025-12-05 00:47:00.289 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 7.5141ms
+2025-12-05 00:47:00.331 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.5118ms
+2025-12-05 00:47:00.359 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2025-12-05 00:47:00.382 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.7513ms
