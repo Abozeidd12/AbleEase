@@ -39,3 +39,10 @@ bld/
 *.zip
 *.tar
 *.gz
+
+# Ignore the object folder
+obj/
+
+# Ignore appsettings files
+appsettings.json
+appsettings.Development.json
