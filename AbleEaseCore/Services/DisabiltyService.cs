@@ -34,8 +34,6 @@ namespace AbleEaseCore.Services
                 await _unitOfWork.BeginTransactionAsync();
 
                 var ssn = Guid.NewGuid();
-
-                // Validate RelativeSSN if provided
                 
 
                 // Create Disability (inherits from User, so no separate User creation needed)
@@ -231,10 +229,7 @@ namespace AbleEaseCore.Services
                 description = DisabilityEntity.description,
                 
             };
-
-            // Only include collections if explicitly requested
-        
-            
+                    
             return dto;
         }
 
