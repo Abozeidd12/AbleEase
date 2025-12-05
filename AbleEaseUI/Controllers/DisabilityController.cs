@@ -38,12 +38,12 @@ namespace AbleEaseUI.Controllers
             }
         }
 
-        [HttpGet("GetDisabilityByID/{id:guid}")]
-        public async Task<ActionResult<GetDisability>> GetDisability(Guid ssn)
+        [HttpGet("GetDisabilityByID/{Id:guid}")]
+        public async Task<ActionResult<GetDisability>> GetDisability(Guid Id)
         {
-            var Disability = await _DisabilityService.GetDisabilityByIDAsync(ssn);
+            var Disability = await _DisabilityService.GetDisabilityByIDAsync(Id);
             if (Disability == null)
-                return NotFound(new { message = $"Disability with SSN {ssn} not found" });
+                return NotFound(new { message = $"Disability with ID {Id} not found" });
 
             return Ok(Disability);
         }
@@ -57,14 +57,14 @@ namespace AbleEaseUI.Controllers
 
         [HttpPut("UpdateDisability/{id:guid}")]
         public async Task<ActionResult<GetDisability>> UpdateDisability(
-            Guid ssn, [FromBody] UpdateDisability dto)
+            Guid id, [FromBody] UpdateDisability dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
             try
             {
-                var result = await _DisabilityService.UpdateDisabilityAsync(ssn, dto);
+                var result = await _DisabilityService.UpdateDisabilityAsync(id, dto);
                 return Ok(result);
             }
             catch (KeyNotFoundException ex)
@@ -82,11 +82,11 @@ namespace AbleEaseUI.Controllers
         }
 
         [HttpDelete("DeleteDisability/{id:guid}")]
-        public async Task<ActionResult> DeleteDisability(Guid ssn)
+        public async Task<ActionResult> DeleteDisability(Guid id)
         {
-            var result = await _DisabilityService.DeleteDisabilityAsync(ssn);
+            var result = await _DisabilityService.DeleteDisabilityAsync(id);
             if (!result)
-                return NotFound(new { message = $"Disability with SSN {ssn} not found" });
+                return NotFound(new { message = $"Disability with SSN {id} not found" });
 
             return NoContent();
         }

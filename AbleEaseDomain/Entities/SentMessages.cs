@@ -1,4 +1,6 @@
-﻿namespace AbleEaseDomain.Entities
+﻿using AbleEaseDomain.Enums;
+
+namespace AbleEaseDomain.Entities
 {
     // ============================================
     // WEAK ENTITY: MESSAGE (depends on User - Sender)
@@ -10,6 +12,7 @@
         public int Id { get; set; }
 
         public Guid ReceiverSSN { get; set; } 
+        public MessageType messageType { get; set; }
 
         public string? Subject { get; set; }
         public string? Body { get; set; }

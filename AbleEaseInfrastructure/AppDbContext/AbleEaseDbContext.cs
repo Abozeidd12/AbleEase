@@ -107,6 +107,13 @@ namespace AbleEaseInfrastructure.Data
                 .Property(r => r.Gender)
                 .HasConversion<string>();
 
+            modelBuilder.Entity<SentMessages>()
+               .Property(r => r.messageType)
+               .HasConversion<string>();
+            modelBuilder.Entity<ReceivedMessages>()
+               .Property(r => r.messageType)
+               .HasConversion<string>();
+
             // ============================================
             // CAREGIVER CONFIGURATION
             // ============================================

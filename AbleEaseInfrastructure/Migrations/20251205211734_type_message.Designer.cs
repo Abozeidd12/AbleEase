@@ -4,6 +4,7 @@ using AbleEaseInfrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AbleEaseInfrastructure.Migrations
 {
     [DbContext(typeof(AbleEaseDbContext))]
-    partial class AbleEaseDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251205211734_type_message")]
+    partial class type_message
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -331,9 +334,8 @@ namespace AbleEaseInfrastructure.Migrations
                     b.Property<string>("Subject")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("messageType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("messageType")
+                        .HasColumnType("int");
 
                     b.HasKey("SenderSSN", "Id", "ReceivedSSN");
 
@@ -402,9 +404,8 @@ namespace AbleEaseInfrastructure.Migrations
                     b.Property<string>("Subject")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("messageType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("messageType")
+                        .HasColumnType("int");
 
                     b.HasKey("SenderSSN", "Id", "ReceiverSSN");
 

@@ -1,4 +1,6 @@
-﻿namespace AbleEaseDomain.Entities
+﻿using AbleEaseDomain.Enums;
+
+namespace AbleEaseDomain.Entities
 {
     public class ReceivedMessages
     {
@@ -7,6 +9,8 @@
         public int Id { get; set; }
 
         public Guid SenderSSN { get; set; }
+        public MessageType messageType { get; set; }
+
 
 
         public string? Subject { get; set; }
