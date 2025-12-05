@@ -16,6 +16,8 @@ namespace AbleEaseDomain.Entities
         public DateTime endDate { get; set; }
         public ProgressStatus status { get; set; }
 
+        public double price { get; set; }
+
         public List<Patient> patients { get; set; } = new List<Patient>();
 
         // Required parent (identifying relationship)

@@ -7,6 +7,10 @@
 *.userosscache
 *.sln.docstates
 
+# App settings (DO NOT TRACK)
+appsettings.json
+appsettings.Development.json
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -39,10 +43,3 @@ bld/
 *.zip
 *.tar
 *.gz
-
-# Ignore the object folder
-obj/
-
-# Ignore appsettings files
-appsettings.json
-appsettings.Development.json

@@ -294,6 +294,9 @@ namespace AbleEaseInfrastructure.Migrations
                     b.Property<DateTime>("endDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<double>("price")
+                        .HasColumnType("float");
+
                     b.Property<DateTime>("startDate")
                         .HasColumnType("datetime2");
 
