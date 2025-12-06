@@ -30,8 +30,12 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IPatientService, PatientService>();
 builder.Services.AddScoped<IDisabilityService, DisabilityService>();
+<<<<<<< HEAD
 builder.Services.AddScoped<IPatientDisabilityService, PatientDisabilityService>();
 
+=======
+builder.Services.AddScoped<IFinancialAidService, FinancialAidService>();
+>>>>>>> ef0ff50cf9e66b0acc7107f0d475ee1e07b189d6
 
 
 
