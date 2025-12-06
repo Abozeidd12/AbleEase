@@ -766,6 +766,7 @@ VALUES (@p0, @p1, @p2, @p3);
 2025-12-05 16:03:13.820 +02:00 [INF] HTTP POST /api/Disability/AddDisability responded 201 in 1210.4073 ms
 2025-12-05 16:03:13.826 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7040/api/Disability/AddDisability - 201 null application/json; charset=utf-8 1230.2169ms
 <<<<<<< HEAD
+<<<<<<< HEAD
 2025-12-05 23:17:29.052 +02:00 [INF] Application is building...........
 2025-12-05 23:18:41.251 +02:00 [INF] Application is building...........
 2025-12-05 23:19:02.265 +02:00 [INF] Application is building...........
@@ -879,6 +880,8 @@ FROM [Disabilities] AS [d]
 2025-12-05 23:23:53.242 +02:00 [INF] HTTP GET /api/Disability/GetAllDisabilities responded 200 in 41.4407 ms
 2025-12-05 23:23:53.246 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Disability/GetAllDisabilities - 200 null application/json; charset=utf-8 59.9248ms
 =======
+=======
+>>>>>>> ef0ff50cf9e66b0acc7107f0d475ee1e07b189d6
 2025-12-05 23:19:50.126 +02:00 [INF] Application is building...........
 2025-12-05 23:19:50.253 +02:00 [INF] User profile is available. Using 'C:\Users\nancy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
 2025-12-05 23:19:50.325 +02:00 [INF] Application is Running...........
@@ -1084,4 +1087,7 @@ ORDER BY [u].[SSN], [t].[SSN], [t0].[SSN], [p0].[OrganizationSSN], [p0].[Id], [m
 2025-12-05 23:48:53.008 +02:00 [INF] Executed endpoint 'AbleEaseAPI.Controllers.PatientsController.GetAllPatients (AbleEaseUI)'
 2025-12-05 23:48:53.008 +02:00 [INF] HTTP GET /api/Patients/GetAllPatients responded 200 in 162.9669 ms
 2025-12-05 23:48:53.010 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Patients/GetAllPatients - 200 null application/json; charset=utf-8 167.9323ms
+<<<<<<< HEAD
+>>>>>>> ef0ff50cf9e66b0acc7107f0d475ee1e07b189d6
+=======
 >>>>>>> ef0ff50cf9e66b0acc7107f0d475ee1e07b189d6
